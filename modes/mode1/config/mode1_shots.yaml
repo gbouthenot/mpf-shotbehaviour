@@ -1,0 +1,123 @@
+#config_version=6
+---
+
+shots:
+  sh_triangle1:
+    switch: s_triangle1
+    show_tokens:
+      led: l_triangle1
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle1
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle1
+        state: 1
+    debug: true
+  sh_triangle2:
+    switch: s_triangle2
+    show_tokens:
+      led: l_triangle2
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle2
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle2
+        state: 1
+    debug: true
+  sh_triangle3:
+    switch: s_triangle3
+    show_tokens:
+      led: l_triangle3
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle3
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle3
+        state: 1
+    debug: true
+  sh_triangle4:
+    switch: s_triangle4
+    show_tokens:
+      led: l_triangle4
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle4
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle4
+        state: 1
+    debug: true
+  sh_triangle5:
+    switch: s_triangle5
+    show_tokens:
+      led: l_triangle5
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle5
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle5
+        state: 1
+    debug: true
+  sh_triangle6:
+    switch: s_triangle6
+    show_tokens:
+      led: l_triangle6
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle6
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle6
+        state: 1
+    debug: true
+  sh_triangle7:
+    switch: s_triangle7
+    show_tokens:
+      led: l_triangle7
+    profile: p_dis_lit_unlit
+    persist_enable: false
+    start_enabled: false
+    enable_events: enable_sh_triangle7
+    disable_events: disable_sh_triangles
+    control_events:
+      - events: disable_sh_triangles
+        state: 0
+      - events: enable_sh_triangle7
+        state: 1
+    debug: true
+
+
+shot_profiles:
+  p_dis_lit_unlit:
+    states:
+      - name: dis
+        show: "off"
+      - name: lit
+        show: flash_color
+        speed: 5
+        show_tokens:
+          color: red
+      - name: unlit
+        show: "off"

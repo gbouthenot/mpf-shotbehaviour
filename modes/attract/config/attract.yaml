@@ -1,0 +1,12 @@
+#config_version=6
+---
+
+slides:
+  sl_attract_main:
+    widgets:
+      - text: ATTRACT MODE
+        type: text
+        font_size: 30
+
+slide_player:
+  mode_attract_started: sl_attract_main

@@ -1,0 +1,19 @@
+#config_version=6
+
+########################
+# In this file:
+# - displays
+# - window
+########################
+---
+displays:
+  mywindow:
+    width: 1920
+    height: 1080
+
+window:
+  # /1:1920x1080  /2:960x540 /3:640x360 /4x:480x270
+  width: 640
+  height: 360
+  fullscreen: false
+  borderless: false

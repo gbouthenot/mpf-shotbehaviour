@@ -1,0 +1,31 @@
+#config_version=6
+---
+
+mode:
+  start_events: ball_started
+
+
+slides:
+  sl_base:
+    widgets:
+      - type: text
+        text: PLAYER (number) BALL (ball)
+        font_size: 60
+        color: yellow
+
+slide_player:
+  mode_base_started: sl_base
+
+event_player:
+  key_a_pressed:
+    - start_mode_mode1
+  key_shift_a_pressed:
+    - stop_mode_mode1
+
+widgets:
+  w_modename:
+    - type: text
+      text: "Mode 1"
+      font_size: 60
+      color: red
+      y: 40%

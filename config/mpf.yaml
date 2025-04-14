@@ -1,0 +1,9 @@
+#config_version=6
+
+########################
+# In this file:
+# - mpf
+########################
+---
+mpf:
+  report_crashes: never

@@ -1,0 +1,22 @@
+#config_version=6
+
+########################
+# In this file:
+# - machine
+# - game
+# - playfields
+########################
+---
+machine:
+  balls_installed: 1
+  min_balls: 1
+
+game:
+  balls_per_game: 3
+  max_players: 4
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger
+    enable_ball_search: false

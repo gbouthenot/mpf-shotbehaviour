@@ -1,0 +1,11 @@
+#config_version=6
+
+########################
+# In this file:
+# - modes
+########################
+---
+modes:
+  - attract
+  - base
+  - mode1

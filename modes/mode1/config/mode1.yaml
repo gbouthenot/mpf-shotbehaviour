@@ -1,0 +1,25 @@
+#config_version=6
+---
+
+config:
+  - mode1_shots.yaml
+
+mode:
+  start_events: start_mode_mode1
+  stop_events: stop_mode_mode1
+
+event_player:
+  key_1_pressed: enable_sh_triangle1
+  key_2_pressed: enable_sh_triangle2
+  key_3_pressed: enable_sh_triangle3
+  key_4_pressed: enable_sh_triangle4
+  key_5_pressed: enable_sh_triangle5
+  key_6_pressed: enable_sh_triangle6
+  key_7_pressed: enable_sh_triangle7
+
+
+widget_player:
+  mode_mode1_started:
+    w_modename:
+      action: add
+      slide: sl_base

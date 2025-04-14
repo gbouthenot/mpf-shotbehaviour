@@ -1,0 +1,64 @@
+#config_version=6
+---
+
+config:
+  - displays.yaml
+  - hardware.yaml
+  - machine.yaml
+  - modes.yaml
+  - mpf.yaml
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left
+    activation_switch: s_left_flipper
+    disable_events: ball_ending, service_mode_entered, disable_flipper
+    enable_events: ball_started, enable_flipper
+  right_flipper:
+    main_coil: c_flipper_right
+    activation_switch: s_right_flipper
+    disable_events: ball_ending, service_mode_entered, disable_flipper
+    enable_events: ball_started, enable_flipper
+
+keyboard:
+  '1':
+    event: key_1_pressed
+  '2':
+    event: key_2_pressed
+  '3':
+    event: key_3_pressed
+  '4':
+    event: key_4_pressed
+  '5':
+    event: key_5_pressed
+  '6':
+    event: key_6_pressed
+  '7':
+    event: key_7_pressed
+
+  'a':
+    event: key_a_pressed
+  'shift+a':
+    event: key_shift_a_pressed
+  's':
+    switch: s_trough1
+    toggle: true
+  'enter':
+    switch: s_start_button
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger
+
+ball_devices:
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_targets: playfield
+    confirm_eject_type: fake
+  bd_trough:
+    ball_switches: s_trough1
+    mechanical_eject: true
+    tags: trough, home, drain
+    confirm_eject_type: fake
