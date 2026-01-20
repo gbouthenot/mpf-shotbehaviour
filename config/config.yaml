@@ -7,18 +7,27 @@ config:
   - machine.yaml
   - modes.yaml
   - mpf.yaml
+  - lights.yaml
 
 flippers:
   left_flipper:
     main_coil: c_flipper_left
+    hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
     disable_events: ball_ending, service_mode_entered, disable_flipper
     enable_events: ball_started, enable_flipper
-  right_flipper:
-    main_coil: c_flipper_right
-    activation_switch: s_right_flipper
-    disable_events: ball_ending, service_mode_entered, disable_flipper
-    enable_events: ball_started, enable_flipper
+    eos_switch: s_left_flipper_eos
+
+autofire_coils:
+  ac_bumper:
+    switch: s_bumper
+    coil: c_bumper
+
+#  right_flipper:
+#    main_coil: c_flipper_right
+#    activation_switch: s_right_flipper
+#    disable_events: ball_ending, service_mode_entered, disable_flipper
+#    enable_events: ball_started, enable_flipper
 
 keyboard:
   '1':
@@ -53,12 +62,12 @@ playfields:
 
 ball_devices:
   bd_plunger:
-    ball_switches: s_plunger
+    ball_switches: s_bumper
     mechanical_eject: true
     eject_targets: playfield
     confirm_eject_type: fake
-  bd_trough:
-    ball_switches: s_trough1
-    mechanical_eject: true
-    tags: trough, home, drain
-    confirm_eject_type: fake
+#   bd_trough:
+#     ball_switches: s_trough1
+#     mechanical_eject: true
+#     tags: trough, home, drain
+#     confirm_eject_type: fake

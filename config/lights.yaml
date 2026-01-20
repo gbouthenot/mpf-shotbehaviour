@@ -1,0 +1,101 @@
+#config_version=6
+
+##################
+#     Lights     #
+##################
+lights:
+  l_1:
+    start_channel: 0-0-0
+    type: rgb
+    subtype: led
+  l_2:
+    previous: l_1
+    type: rgb
+    subtype: led
+  l_3:
+    previous: l_2
+    type: rgb
+    subtype: led
+  l_4:
+    previous: l_3
+    type: rgb
+    subtype: led
+  l_5:
+    previous: l_4
+    type: rgb
+    subtype: led
+  l_6:
+    previous: l_5
+    type: rgb
+    subtype: led
+  l_7:
+    previous: l_6
+    type: rgb
+    subtype: led
+  l_8:
+    previous: l_7
+    type: rgb
+    subtype: led
+  l_9:
+    previous: l_8
+    type: rgb
+    subtype: led
+  l_10:
+    previous: l_9
+    type: rgb
+    subtype: led
+  l_11:
+    previous: l_10
+    type: rgb
+    subtype: led
+  l_12:
+    previous: l_11
+    type: rgb
+    subtype: led
+  l_13:
+    previous: l_12
+    type: rgb
+    subtype: led
+  l_14:
+    previous: l_13
+    type: rgb
+    subtype: led
+  l_15:
+    previous: l_14
+    type: rgb
+    subtype: led
+  l_16:
+    previous: l_15
+    type: rgb
+    subtype: led
+  l_17:
+    previous: l_16
+    type: rgb
+    subtype: led
+  l_18:
+    previous: l_17
+    type: rgb
+    subtype: led
+  l_19:
+    previous: l_18
+    type: rgb
+    subtype: led
+  l_20:
+    previous: l_19
+    type: rgb
+    subtype: led
+  l_21:
+    previous: l_20
+    type: rgb
+    subtype: led
+  l_22:
+    previous: l_21
+    type: rgb
+    subtype: led
+  l_23:
+    previous: l_22
+    type: rgb
+    subtype: led
+
+show_player:
+  mode_attract_started: colorwipe

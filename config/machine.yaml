@@ -8,15 +8,15 @@
 ########################
 ---
 machine:
-  balls_installed: 1
-  min_balls: 1
+  balls_installed: 0
+  min_balls: 0
 
 game:
   balls_per_game: 3
   max_players: 4
 
-playfields:
-  playfield:
-    tags: default
-    default_source_device: bd_plunger
-    enable_ball_search: false
+#playfields:
+#  playfield:
+#    tags: default
+#    default_source_device: bd_plunger
+#    enable_ball_search: false
